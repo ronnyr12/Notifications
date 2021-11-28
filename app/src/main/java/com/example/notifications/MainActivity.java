@@ -8,7 +8,6 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btn_start, btn_stop;
-    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,14 +22,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if(btn_start == view){
-            intent = new Intent(MainActivity.this,
-                    FirstService.class);
-            startService(intent);
+
         }
         if(btn_stop == view){
-            intent = new Intent(MainActivity.this,
-                    FirstService.class);
-            stopService(intent);
+
         }
     }
 }

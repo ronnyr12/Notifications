@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Notifications">
         <service
-            android:name=".FirstService"
+            android:name=".PlayMusic_Service"
             android:enabled="true"
             android:exported="true"></service>
+        <service
+            android:name=".FirstService"
+            android:enabled="true"
+            android:exported="true" />
 
         <activity
             android:name=".MainActivity"
